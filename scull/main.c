@@ -218,6 +218,7 @@ static struct file_operations scullseq_proc_ops = {
 
 static void scull_create_proc(void)
 {
+	printk("scull create proc\n")
 	proc_create_data("scullmem", 0 /* default mode */,
 			NULL /* parent dir */, &scullmem_proc_ops,
 			NULL /* client data */);
