@@ -11,7 +11,7 @@ endif
 
 LDDINC=$(PWD)/../include
 
-EXTRA_CFLAGS += $(DEBFLAGS)
+EXTRA_CFLAGS += $(DEBFLAGS) -Werror
 EXTRA_CFLAGS += -I$(LDDINC)
 
 ifneq ($(KERNELRELEASE),)
